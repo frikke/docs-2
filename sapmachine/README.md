@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `sapmachine` official image](https://hub.docker.com/_/sapmachine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11`, `11.0.19`](https://github.com/SAP/SapMachine-infrastructure/blob/c2a79726eae76118b0b204bb201920ce200d0703/dockerfiles/official/11/Dockerfile)
--	[`17`, `17.0.7`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/b5e632a4b8a28d1618215983fa95859979c63280/dockerfiles/official/17/Dockerfile)
--	[`20`, `20.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/2f4f203530b69b9e7b120c1f1e0d8e8baafa40f2/dockerfiles/official/20/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
+
+[![i386/sapmachine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/sapmachine.svg?label=i386/sapmachine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/sapmachine/)
 
 # Quick reference (cont.)
 
@@ -64,14 +66,14 @@ Java and all Java-based trademarks and logos are trademarks or registered tradem
 You can pull and test the image with the following commands:
 
 ```console
-docker pull sapmachine:latest
-docker run -it sapmachine:latest java -version
+docker pull i386/sapmachine:latest
+docker run -it i386/sapmachine:latest java -version
 ```
 
 You can also use the SapMachine image as a base image to run your own jar file:
 
 ```dockerfile
-FROM sapmachine:latest
+FROM i386/sapmachine:latest
 RUN mkdir /opt/myapp
 COPY myapp.jar /opt/myapp
 CMD ["java", "-jar", "/opt/myapp/myapp.jar"]

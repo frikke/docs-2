@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -39,21 +41,8 @@ WARNING:
 -	[`bionic-curl`, `18.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/ubuntu/bionic/curl/Dockerfile)
 -	[`bionic-scm`, `18.04-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/ubuntu/bionic/scm/Dockerfile)
 -	[`bionic`, `18.04`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/bionic/Dockerfile)
--	[`focal-curl`, `20.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/ubuntu/focal/curl/Dockerfile)
--	[`focal-scm`, `20.04-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/ubuntu/focal/scm/Dockerfile)
--	[`focal`, `20.04`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/focal/Dockerfile)
--	[`jammy-curl`, `22.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/ubuntu/jammy/curl/Dockerfile)
--	[`jammy-scm`, `22.04-scm`](https://github.com/docker-library/buildpack-deps/blob/e2fc735283ba4e96efc3e4acf2b74bc3eccbf327/ubuntu/jammy/scm/Dockerfile)
--	[`jammy`, `22.04`](https://github.com/docker-library/buildpack-deps/blob/e2fc735283ba4e96efc3e4acf2b74bc3eccbf327/ubuntu/jammy/Dockerfile)
--	[`kinetic-curl`, `22.10-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/ubuntu/kinetic/curl/Dockerfile)
--	[`kinetic-scm`, `22.10-scm`](https://github.com/docker-library/buildpack-deps/blob/c96f4f3e1d5bc19fba5c652f57af0a35bb929718/ubuntu/kinetic/scm/Dockerfile)
--	[`kinetic`, `22.10`](https://github.com/docker-library/buildpack-deps/blob/c96f4f3e1d5bc19fba5c652f57af0a35bb929718/ubuntu/kinetic/Dockerfile)
--	[`lunar-curl`, `23.04-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/ubuntu/lunar/curl/Dockerfile)
--	[`lunar-scm`, `23.04-scm`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/scm/Dockerfile)
--	[`lunar`, `23.04`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/Dockerfile)
--	[`mantic-curl`, `23.10-curl`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/curl/Dockerfile)
--	[`mantic-scm`, `23.10-scm`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/scm/Dockerfile)
--	[`mantic`, `23.10`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/Dockerfile)
+
+[![i386/buildpack-deps build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/buildpack-deps.svg?label=i386/buildpack-deps%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/buildpack-deps/)
 
 # Quick reference (cont.)
 
