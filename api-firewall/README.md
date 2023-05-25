@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `api-firewall` official image](https://hub.docker.com/_/api-firewall) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.11`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/8da89a87d29d1b6d5a52e3064722d9a24a4c39fb/0.6.11/Dockerfile)
--	[`0.6.10`](https://github.com/wallarm/api-firewall-docker/blob/c2b622e7f59546d9fb338c81fa82d405a8767485/0.6.10/Dockerfile)
--	[`0.6.9`](https://github.com/wallarm/api-firewall-docker/blob/b0579bf17de8f41b162e150b00a87b95648258ee/0.6.9/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/api-firewall build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/api-firewall.svg?label=mips64le/api-firewall%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/api-firewall/)
 
 # Quick reference (cont.)
 
