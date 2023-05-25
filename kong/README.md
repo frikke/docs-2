@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `kong` official image](https://hub.docker.com/_/kong) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,16 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.0-alpine`, `alpine`](https://github.com/Kong/docker-kong/blob/507775715a22e419d1c7e42028f7c3b5d9cf0418/Dockerfile.apk)
--	[`3.3.0-ubuntu`, `3.3-ubuntu`, `3.3.0`, `3.3`, `3`, `latest`, `ubuntu`](https://github.com/Kong/docker-kong/blob/507775715a22e419d1c7e42028f7c3b5d9cf0418/ubuntu/Dockerfile)
--	[`3.2.2-alpine`](https://github.com/Kong/docker-kong/blob/5641f8836920650fc66c6d36408daf794d730b96/Dockerfile.apk)
--	[`3.2.2-ubuntu`, `3.2-ubuntu`, `3.2.2`, `3.2`](https://github.com/Kong/docker-kong/blob/5641f8836920650fc66c6d36408daf794d730b96/ubuntu/Dockerfile)
--	[`3.1.1-alpine`, `3.1.1`, `3.1`](https://github.com/Kong/docker-kong/blob/5f914be945ec1732837cc4f6463219bed566c7ef/Dockerfile.apk)
--	[`3.1.1-ubuntu`, `3.1-ubuntu`](https://github.com/Kong/docker-kong/blob/5f914be945ec1732837cc4f6463219bed566c7ef/ubuntu/Dockerfile)
--	[`3.0.2-alpine`, `3.0-alpine`, `3.0.2`, `3.0`](https://github.com/Kong/docker-kong/blob/5a3ee8daf50371db2e3a788abe8f306255eead22/Dockerfile.apk)
--	[`3.0.2-ubuntu`, `3.0-ubuntu`](https://github.com/Kong/docker-kong/blob/5a3ee8daf50371db2e3a788abe8f306255eead22/ubuntu/Dockerfile)
--	[`2.8.3-alpine`, `2.8.3`, `2.8`](https://github.com/Kong/docker-kong/blob/7557a360568fb70650d35724462446064ec081b3/alpine/Dockerfile)
--	[`2.8.3-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/7557a360568fb70650d35724462446064ec081b3/ubuntu/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
+
+[![arm32v5/kong build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/kong.svg?label=arm32v5/kong%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/kong/)
 
 # Quick reference (cont.)
 
@@ -78,7 +73,7 @@ $ docker run -d --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    kong
+    arm32v5/kong
 ```
 
 Generate a skeleton configuration file to get you started
@@ -139,7 +134,7 @@ $ docker run --rm \
     -e "KONG_PG_USER=kong" \
     -e "KONG_PG_PASSWORD=kong" \
     -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
-    kong kong migrations bootstrap
+    arm32v5/kong kong migrations bootstrap
 ```
 
 In the above example, both Cassandra and PostgreSQL are configured, but you should update the `KONG_DATABASE` environment variable with either `cassandra` or `postgres`.
@@ -166,7 +161,7 @@ $ docker run -d --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    kong
+    arm32v5/kong
 ```
 
 If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy](https://docs.konghq.com/latest/configuration/#proxy_port)), `8443` ([Proxy SSL](https://docs.konghq.com/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](https://docs.konghq.com/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](https://docs.konghq.com/latest/configuration/#admin_listen_ssl)) ports.
@@ -189,7 +184,7 @@ $ docker run -d --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    kong
+    arm32v5/kong
 ```
 
 ## Reload Kong in a running container
@@ -222,28 +217,12 @@ $ docker run --read-only -d --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    kong
+    arm32v5/kong
 ```
 
 # Kubernetes Ingress
 
 Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8s environment.
-
-# Image Variants
-
-The `kong` images come in many flavors, each designed for a specific use case.
-
-## `kong:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `kong:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
