@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -54,6 +56,8 @@ WARNING:
 -	[`mantic-curl`, `23.10-curl`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/curl/Dockerfile)
 -	[`mantic-scm`, `23.10-scm`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/scm/Dockerfile)
 -	[`mantic`, `23.10`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/Dockerfile)
+
+[![amd64/buildpack-deps build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/buildpack-deps.svg?label=amd64/buildpack-deps%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/buildpack-deps/)
 
 # Quick reference (cont.)
 
