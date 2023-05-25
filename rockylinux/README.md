@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `rockylinux` official image](https://hub.docker.com/_/rockylinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.1.20230215`, `9.1`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/c554918c3fb7432f70802459ee942fead8121cae/Dockerfile)
--	[`9.1.20230215-minimal`, `9.1-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/957dce1794c27b8fc1666f7e283db2ba7ef5b182/Dockerfile)
--	[`8.7.20230215`, `8.7`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/65d3f79aa8b5d0a9ed1270470e585539f7d59cd1/Dockerfile)
--	[`8.7.20230215-minimal`, `8.7-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/a923b0d8957fa92feafaa4f6b00f8df08db796ab/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/rockylinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/rockylinux.svg?label=arm32v7/rockylinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/rockylinux/)
 
 # Quick reference (cont.)
 
@@ -61,21 +62,21 @@ Thank you for using Rocky Linux! We appreciate your feedback and welcome you to 
 
 # Rocky Linux image documentation
 
-The `rockylinux:latest` tag is intentionally missing. Please choose a major version (currently 8 or 9) tag, or a more specific tag to ensure you are pulling the version of Rocky Linux you want: e.g. `rockylinux:8` or `rockylinux:9`
+The `arm32v7/rockylinux:latest` tag is intentionally missing. Please choose a major version (currently 8 or 9) tag, or a more specific tag to ensure you are pulling the version of Rocky Linux you want: e.g. `arm32v7/rockylinux:8` or `arm32v7/rockylinux:9`
 
 ## Minimal variant
 
-In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `rockylinux:9-minimal`
+In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `arm32v7/rockylinux:9-minimal`
 
 ## Rolling builds
 
-Rocky Linux offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull rockylinux:8`.
+Rocky Linux offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull arm32v7/rockylinux:8`.
 
 ## Minor tags
 
 Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT receive updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
 
-For example: `docker pull rockylinux:8.4`
+For example: `docker pull arm32v7/rockylinux:8.4`
 
 # Package documentation
 
