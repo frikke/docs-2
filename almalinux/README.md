@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `almalinux` official image](https://hub.docker.com/_/almalinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8.8`, `8.8-20230524`](https://github.com/AlmaLinux/docker-images/blob/96c180e154599cb2831d58f8ef290967ee12e3b9/Dockerfile-x86_64-default)
--	[`8-minimal`, `8.8-minimal`, `8.8-minimal-20230524`](https://github.com/AlmaLinux/docker-images/blob/96c180e154599cb2831d58f8ef290967ee12e3b9/Dockerfile-x86_64-minimal)
--	[`latest`, `9`, `9.2`, `9.2-20230512`](https://github.com/AlmaLinux/docker-images/blob/600467393dc75d3768196215ea1c122b552b9728/Dockerfile-x86_64-default)
--	[`minimal`, `9-minimal`, `9.2-minimal`, `9.2-minimal-20230512`](https://github.com/AlmaLinux/docker-images/blob/600467393dc75d3768196215ea1c122b552b9728/Dockerfile-x86_64-minimal)
+-	[`8`, `8.8`, `8.8-20230524`](https://github.com/AlmaLinux/docker-images/blob/b45dd35e03d4a5d858be83ba373d04f56202b481/Dockerfile-ppc64le-default)
+-	[`8-minimal`, `8.8-minimal`, `8.8-minimal-20230524`](https://github.com/AlmaLinux/docker-images/blob/b45dd35e03d4a5d858be83ba373d04f56202b481/Dockerfile-ppc64le-minimal)
+-	[`latest`, `9`, `9.2`, `9.2-20230512`](https://github.com/AlmaLinux/docker-images/blob/7fc5ec9ff0146d00072a3185fa00f2972c804b93/Dockerfile-ppc64le-default)
+-	[`minimal`, `9-minimal`, `9.2-minimal`, `9.2-minimal-20230512`](https://github.com/AlmaLinux/docker-images/blob/7fc5ec9ff0146d00072a3185fa00f2972c804b93/Dockerfile-ppc64le-minimal)
+
+[![ppc64le/almalinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/almalinux.svg?label=ppc64le/almalinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/almalinux/)
 
 # Quick reference (cont.)
 
@@ -60,13 +64,13 @@ WARNING:
 
 The default (platform) image is a general-purpose image with a full DNF stack and basic tools like find, tar, vi, etc.
 
-The `almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `almalinux:8` or `almalinux:8.4`).
+The `ppc64le/almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `ppc64le/almalinux:8` or `ppc64le/almalinux:8.4`).
 
 ## Minimal image
 
 The minimal image is a stripped-down image that uses the microdnf package manager and contains a very limited package set. It is designed for applications that come with their own dependencies bundled (e.g. NodeJS, Python).
 
-The `almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `almalinux:8-minimal`) and minor (e.g. `almalinux:8.4-minimal`) releases are also available.
+The `ppc64le/almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `ppc64le/almalinux:8-minimal`) and minor (e.g. `ppc64le/almalinux:8.4-minimal`) releases are also available.
 
 ### Upgrade policy
 

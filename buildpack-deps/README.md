@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -30,9 +32,6 @@ WARNING:
 -	[`bullseye-curl`, `stable-curl`, `curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/bullseye/curl/Dockerfile)
 -	[`bullseye-scm`, `stable-scm`, `scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/bullseye/scm/Dockerfile)
 -	[`bullseye`, `stable`, `latest`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/bullseye/Dockerfile)
--	[`buster-curl`, `oldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/buster/curl/Dockerfile)
--	[`buster-scm`, `oldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/buster/scm/Dockerfile)
--	[`buster`, `oldstable`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/buster/Dockerfile)
 -	[`sid-curl`, `unstable-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/debian/sid/curl/Dockerfile)
 -	[`sid-scm`, `unstable-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/sid/scm/Dockerfile)
 -	[`sid`, `unstable`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/sid/Dockerfile)
@@ -54,6 +53,8 @@ WARNING:
 -	[`mantic-curl`, `23.10-curl`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/curl/Dockerfile)
 -	[`mantic-scm`, `23.10-scm`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/scm/Dockerfile)
 -	[`mantic`, `23.10`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/Dockerfile)
+
+[![ppc64le/buildpack-deps build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/buildpack-deps.svg?label=ppc64le/buildpack-deps%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/buildpack-deps/)
 
 # Quick reference (cont.)
 
