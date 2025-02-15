@@ -24,21 +24,45 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`15.3`, `15`, `latest`, `15.3-bullseye`, `15-bullseye`, `bullseye`](https://github.com/docker-library/postgres/blob/a23c0e97980edae5be2cd4eb68ff1f0762d031cd/15/bullseye/Dockerfile)
--	[`15.3-alpine3.18`, `15-alpine3.18`, `alpine3.18`, `15.3-alpine`, `15-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/15/alpine3.18/Dockerfile)
--	[`15.3-alpine3.17`, `15-alpine3.17`, `alpine3.17`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/15/alpine3.17/Dockerfile)
--	[`14.8`, `14`, `14.8-bullseye`, `14-bullseye`](https://github.com/docker-library/postgres/blob/8ff11cd5ae43e73fd84d0b2bc8aa88537fe18649/14/bullseye/Dockerfile)
--	[`14.8-alpine3.18`, `14-alpine3.18`, `14.8-alpine`, `14-alpine`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/14/alpine3.18/Dockerfile)
--	[`14.8-alpine3.17`, `14-alpine3.17`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/14/alpine3.17/Dockerfile)
--	[`13.11`, `13`, `13.11-bullseye`, `13-bullseye`](https://github.com/docker-library/postgres/blob/43d17d5ced92f230fa8c196e746f2e2aa288e5e8/13/bullseye/Dockerfile)
--	[`13.11-alpine3.18`, `13-alpine3.18`, `13.11-alpine`, `13-alpine`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/13/alpine3.18/Dockerfile)
--	[`13.11-alpine3.17`, `13-alpine3.17`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/13/alpine3.17/Dockerfile)
--	[`12.15`, `12`, `12.15-bullseye`, `12-bullseye`](https://github.com/docker-library/postgres/blob/d681c1da2faebccc790fffd3e71514548b458d50/12/bullseye/Dockerfile)
--	[`12.15-alpine3.18`, `12-alpine3.18`, `12.15-alpine`, `12-alpine`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/12/alpine3.18/Dockerfile)
--	[`12.15-alpine3.17`, `12-alpine3.17`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/12/alpine3.17/Dockerfile)
--	[`11.20-bullseye`, `11-bullseye`](https://github.com/docker-library/postgres/blob/ee629b1e31754d3aeed529a1a3610ac180f20e0b/11/bullseye/Dockerfile)
--	[`11.20-alpine3.18`, `11-alpine3.18`, `11.20-alpine`, `11-alpine`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/11/alpine3.18/Dockerfile)
--	[`11.20-alpine3.17`, `11-alpine3.17`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/11/alpine3.17/Dockerfile)
+-	[`17.3`, `17`, `latest`, `17.3-bookworm`, `17-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/22dad776d9f858f5fb1940ac165be76aa8521e49/17/bookworm/Dockerfile)
+
+-	[`17.3-bullseye`, `17-bullseye`, `bullseye`](https://github.com/docker-library/postgres/blob/22dad776d9f858f5fb1940ac165be76aa8521e49/17/bullseye/Dockerfile)
+
+-	[`17.3-alpine3.21`, `17-alpine3.21`, `alpine3.21`, `17.3-alpine`, `17-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/22dad776d9f858f5fb1940ac165be76aa8521e49/17/alpine3.21/Dockerfile)
+
+-	[`17.3-alpine3.20`, `17-alpine3.20`, `alpine3.20`](https://github.com/docker-library/postgres/blob/22dad776d9f858f5fb1940ac165be76aa8521e49/17/alpine3.20/Dockerfile)
+
+-	[`16.7`, `16`, `16.7-bookworm`, `16-bookworm`](https://github.com/docker-library/postgres/blob/c17c1aad6bc4a8cc9d0a1791d8facaa84171c05b/16/bookworm/Dockerfile)
+
+-	[`16.7-bullseye`, `16-bullseye`](https://github.com/docker-library/postgres/blob/c17c1aad6bc4a8cc9d0a1791d8facaa84171c05b/16/bullseye/Dockerfile)
+
+-	[`16.7-alpine3.21`, `16-alpine3.21`, `16.7-alpine`, `16-alpine`](https://github.com/docker-library/postgres/blob/c17c1aad6bc4a8cc9d0a1791d8facaa84171c05b/16/alpine3.21/Dockerfile)
+
+-	[`16.7-alpine3.20`, `16-alpine3.20`](https://github.com/docker-library/postgres/blob/c17c1aad6bc4a8cc9d0a1791d8facaa84171c05b/16/alpine3.20/Dockerfile)
+
+-	[`15.11`, `15`, `15.11-bookworm`, `15-bookworm`](https://github.com/docker-library/postgres/blob/607fdbdadc175f112ebcf94a42272ca57e3b8ab2/15/bookworm/Dockerfile)
+
+-	[`15.11-bullseye`, `15-bullseye`](https://github.com/docker-library/postgres/blob/607fdbdadc175f112ebcf94a42272ca57e3b8ab2/15/bullseye/Dockerfile)
+
+-	[`15.11-alpine3.21`, `15-alpine3.21`, `15.11-alpine`, `15-alpine`](https://github.com/docker-library/postgres/blob/607fdbdadc175f112ebcf94a42272ca57e3b8ab2/15/alpine3.21/Dockerfile)
+
+-	[`15.11-alpine3.20`, `15-alpine3.20`](https://github.com/docker-library/postgres/blob/607fdbdadc175f112ebcf94a42272ca57e3b8ab2/15/alpine3.20/Dockerfile)
+
+-	[`14.16`, `14`, `14.16-bookworm`, `14-bookworm`](https://github.com/docker-library/postgres/blob/4bc3d04127905a457a92d7eb42e7e677389b8135/14/bookworm/Dockerfile)
+
+-	[`14.16-bullseye`, `14-bullseye`](https://github.com/docker-library/postgres/blob/4bc3d04127905a457a92d7eb42e7e677389b8135/14/bullseye/Dockerfile)
+
+-	[`14.16-alpine3.21`, `14-alpine3.21`, `14.16-alpine`, `14-alpine`](https://github.com/docker-library/postgres/blob/4bc3d04127905a457a92d7eb42e7e677389b8135/14/alpine3.21/Dockerfile)
+
+-	[`14.16-alpine3.20`, `14-alpine3.20`](https://github.com/docker-library/postgres/blob/4bc3d04127905a457a92d7eb42e7e677389b8135/14/alpine3.20/Dockerfile)
+
+-	[`13.19`, `13`, `13.19-bookworm`, `13-bookworm`](https://github.com/docker-library/postgres/blob/7da49aaa6a5d1496288b8a54c40ac2860e2ac85b/13/bookworm/Dockerfile)
+
+-	[`13.19-bullseye`, `13-bullseye`](https://github.com/docker-library/postgres/blob/7da49aaa6a5d1496288b8a54c40ac2860e2ac85b/13/bullseye/Dockerfile)
+
+-	[`13.19-alpine3.21`, `13-alpine3.21`, `13.19-alpine`, `13-alpine`](https://github.com/docker-library/postgres/blob/7da49aaa6a5d1496288b8a54c40ac2860e2ac85b/13/alpine3.21/Dockerfile)
+
+-	[`13.19-alpine3.20`, `13-alpine3.20`](https://github.com/docker-library/postgres/blob/7da49aaa6a5d1496288b8a54c40ac2860e2ac85b/13/alpine3.20/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -46,7 +70,7 @@ WARNING:
 	[https://github.com/docker-library/postgres/issues](https://github.com/docker-library/postgres/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/postgres/), [`arm32v5`](https://hub.docker.com/r/arm32v5/postgres/), [`arm32v6`](https://hub.docker.com/r/arm32v6/postgres/), [`arm32v7`](https://hub.docker.com/r/arm32v7/postgres/), [`arm64v8`](https://hub.docker.com/r/arm64v8/postgres/), [`i386`](https://hub.docker.com/r/i386/postgres/), [`mips64le`](https://hub.docker.com/r/mips64le/postgres/), [`ppc64le`](https://hub.docker.com/r/ppc64le/postgres/), [`s390x`](https://hub.docker.com/r/s390x/postgres/)
+	[`amd64`](https://hub.docker.com/r/amd64/postgres/), [`arm32v5`](https://hub.docker.com/r/arm32v5/postgres/), [`arm32v6`](https://hub.docker.com/r/arm32v6/postgres/), [`arm32v7`](https://hub.docker.com/r/arm32v7/postgres/), [`arm64v8`](https://hub.docker.com/r/arm64v8/postgres/), [`i386`](https://hub.docker.com/r/i386/postgres/), [`mips64le`](https://hub.docker.com/r/mips64le/postgres/), [`ppc64le`](https://hub.docker.com/r/ppc64le/postgres/), [`riscv64`](https://hub.docker.com/r/riscv64/postgres/), [`s390x`](https://hub.docker.com/r/s390x/postgres/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/postgres/` directory](https://github.com/docker-library/repo-info/blob/master/repos/postgres) ([history](https://github.com/docker-library/repo-info/commits/master/repos/postgres))  
@@ -103,13 +127,21 @@ Example `docker-compose.yml` for `postgres`:
 
 ```yaml
 # Use postgres/example user/password credentials
-version: '3.1'
+version: '3.9'
 
 services:
 
   db:
     image: postgres
     restart: always
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    # or set shared memory limit when deploy via swarm stack
+    #volumes:
+    #  - type: tmpfs
+    #    target: /dev/shm
+    #    tmpfs:
+    #      size: 134217728 # 128*2^20 bytes = 128Mb
     environment:
       POSTGRES_PASSWORD: example
 
@@ -120,7 +152,7 @@ services:
       - 8080:8080
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/postgres/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/f254f585ba82d2e19d794100dd7bca71fb1c02e7/postgres/stack.yml)
 
 Run `docker stack deploy -c stack.yml postgres` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -180,7 +212,9 @@ See the PostgreSQL documentation on [`pg_hba.conf`](https://www.postgresql.org/d
 
 ### `PGDATA`
 
-This optional variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`. If the data volume you're using is a filesystem mountpoint (like with GCE persistent disks) or remote folder that cannot be chowned to the `postgres` user (like some NFS mounts), Postgres `initdb` recommends a subdirectory be created to contain the data.
+> **Important Note:** Mount the data volume at `/var/lib/postgresql/data` and not at `/var/lib/postgresql` because mounts at the latter path WILL NOT PERSIST database data when the container is re-created. The Dockerfile that builds the image declares a volume at `/var/lib/postgresql/data` and if no data volume is mounted at that path then the container runtime will automatically create an [anonymous volume](https://docs.docker.com/engine/storage/#volumes) that is not reused across container re-creations. Data will be written to the anonymous volume rather than your intended data volume and won't persist when the container is deleted and re-created.
+
+This optional variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`. If the data volume you're using is a filesystem mountpoint (like with GCE persistent disks), or remote folder that cannot be chowned to the `postgres` user (like some NFS mounts), or contains folders/files (e.g. `lost+found`), Postgres `initdb` requires a subdirectory to be created within the mountpoint to contain the data.
 
 For example:
 
@@ -325,7 +359,7 @@ The three easiest ways to get around this:
 
 If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `docker-compose`, that start several containers simultaneously.
 
-Also note that the default `/dev/shm` size for containers is 64MB. If the shared memory is exhausted you will encounter `ERROR:  could not resize shared memory segment . . . : No space left on device`. You will want to pass [`--shm-size=256MB`](https://docs.docker.com/engine/reference/run/#runtime-constraints-on-resources) for example to `docker run`, or alternatively in [`docker-compose`](https://docs.docker.com/compose/compose-file/#shm_size).
+Also note that the default `/dev/shm` size for containers is 64MB. If the shared memory is exhausted you will encounter `ERROR:  could not resize shared memory segment . . . : No space left on device`. You will want to pass [`--shm-size=256MB`](https://docs.docker.com/engine/reference/run/#runtime-constraints-on-resources) for example to `docker run`, or alternatively in [`docker-compose`](https://docs.docker.com/compose/compose-file/05-services/#shm_size).
 
 ## Where to Store Data
 
@@ -353,7 +387,7 @@ The `postgres` images come in many flavors, each designed for a specific use cas
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `postgres:<version>-alpine`
 
