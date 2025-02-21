@@ -20,12 +20,13 @@ WARNING:
 	[the SWI-Prolog community](https://github.com/SWI-Prolog/docker-swipl)
 
 -	**Where to get help**:  
-	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [SWI-Prolog home](https://www.swi-prolog.org), [SWI-Prolog forum](https://swi-prolog.discourse.group/), [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9.1.10`](https://github.com/SWI-Prolog/docker-swipl/blob/a96b8e1155f4f6997895bf5e4aa5f4e61fb69bed/9.1.10/bullseye/Dockerfile)
--	[`stable`, `9.0.4`](https://github.com/SWI-Prolog/docker-swipl/blob/a96b8e1155f4f6997895bf5e4aa5f4e61fb69bed/9.0.4/bullseye/Dockerfile)
+-	[`latest`, `9.3.20`](https://github.com/SWI-Prolog/docker-swipl/blob/48963cac95fb1e03fa6280d30da302b887d42280/9.3.20/bookworm/Dockerfile)
+
+-	[`stable`, `9.2.9`](https://github.com/SWI-Prolog/docker-swipl/blob/48963cac95fb1e03fa6280d30da302b887d42280/9.2.9/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 

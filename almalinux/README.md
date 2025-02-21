@@ -24,10 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8.8`, `8.8-20230524`](https://github.com/AlmaLinux/docker-images/blob/96c180e154599cb2831d58f8ef290967ee12e3b9/Dockerfile-x86_64-default)
--	[`8-minimal`, `8.8-minimal`, `8.8-minimal-20230524`](https://github.com/AlmaLinux/docker-images/blob/96c180e154599cb2831d58f8ef290967ee12e3b9/Dockerfile-x86_64-minimal)
--	[`latest`, `9`, `9.2`, `9.2-20230512`](https://github.com/AlmaLinux/docker-images/blob/600467393dc75d3768196215ea1c122b552b9728/Dockerfile-x86_64-default)
--	[`minimal`, `9-minimal`, `9.2-minimal`, `9.2-minimal-20230512`](https://github.com/AlmaLinux/docker-images/blob/600467393dc75d3768196215ea1c122b552b9728/Dockerfile-x86_64-minimal)
+-	[`10-kitten`, `10-kitten-20250204`](https://github.com/AlmaLinux/container-images/blob/0dd34b412e662a392275d79dc2f0fb635e74ff7a/default/amd64/Dockerfile)
+
+-	[`10-kitten-minimal`, `10-kitten-minimal-20250204`](https://github.com/AlmaLinux/container-images/blob/0dd34b412e662a392275d79dc2f0fb635e74ff7a/minimal/amd64/Dockerfile)
+
+-	[`8`, `8.10`, `8.10-20240923`](https://github.com/AlmaLinux/container-images/blob/9220c28666f44af82172cba59a3ddc30fbae1cb7/default/amd64/Dockerfile)
+
+-	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20240923`](https://github.com/AlmaLinux/container-images/blob/9220c28666f44af82172cba59a3ddc30fbae1cb7/minimal/amd64/Dockerfile)
+
+-	[`latest`, `9`, `9.5`, `9.5-20241118`](https://github.com/AlmaLinux/container-images/blob/77b627bf5868945d5ae46e65af84a2de13a7319a/default/amd64/Dockerfile)
+
+-	[`minimal`, `9-minimal`, `9.5-minimal`, `9.5-minimal-20241118`](https://github.com/AlmaLinux/container-images/blob/77b627bf5868945d5ae46e65af84a2de13a7319a/minimal/amd64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -50,7 +57,7 @@ WARNING:
 
 # AlmaLinux OS
 
-[AlmaLinux OS](https://almalinux.org/) is an Open Source and forever-free enterprise Linux distribution, governed and driven by the community, focused on long-term stability and a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL® 8 and it was founded by the team behind the well-established [CloudLinux OS](https://www.cloudlinux.com/all-products/product-overview/cloudlinuxos).
+[AlmaLinux OS](https://almalinux.org/) is an Open Source and forever-free enterprise Linux distribution, governed and driven by the community, focused on long-term stability and a robust production-grade platform. AlmaLinux OS is binary compatible with RHEL®, and it was founded by the team behind the well-established [CloudLinux OS](https://www.cloudlinux.com/all-products/product-overview/cloudlinuxos). Today, the AlmaLinux OS Foundation, run by a community-elected board of directors, owns and manages the operating system.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/23547f3e976bc000d1a01a47241000f72aec9a40/almalinux/logo.png)
 

@@ -24,9 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023`, `latest`, `2023.0.20230503.0`](https://github.com/amazonlinux/container-images/blob/ea5a916817e6c6bd0f031358bb8f4f5c272d7de1/Dockerfile)
--	[`2`, `2.0.20230504.1`](https://github.com/amazonlinux/container-images/blob/a3064f5b88429f37824e9d9897021058f5eed6d6/Dockerfile)
--	[`1`, `2018.03`, `2018.03.0.20230501.0`](https://github.com/amazonlinux/container-images/blob/28a8085038403ae42578118bc2fdad522bbcd64e/Dockerfile)
+-	[`2023`, `latest`, `2023.6.20250203.1`](https://github.com/amazonlinux/container-images/blob/dcd3593bb82fac820a4dc25d028d8e46c2424bcb/Dockerfile)
+
+-	[`2`, `2.0.20250201.0`](https://github.com/amazonlinux/container-images/blob/35791b0faed7f8ba07b37a377e9bab1bcfa496f3/Dockerfile)
+
+-	[`1`, `2018.03`, `2018.03.0.20231218.0`](https://github.com/amazonlinux/container-images/blob/cfb41ad1c7624786ea10f60c15ce9c117c4da3b6/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -73,7 +75,7 @@ Note that Docker Hub's vulnerability scanning for Amazon Linux is currently base
 ## What is Amazon Linux 2023?
 
 -	Amazon Linux 2023: https://aws.amazon.com/linux/amazon-linux-2023/
--	2023.0 Release Notes: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html
+-	2023 Release Notes: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html
 -	FAQs: https://aws.amazon.com/linux/amazon-linux-2023/faqs/
 -	What's New: https://aws.amazon.com/about-aws/whats-new/2023/03/amazon-linux-2023/
 -	User Guide: https://docs.aws.amazon.com/linux/al2023/ug/what-is-amazon-linux.html

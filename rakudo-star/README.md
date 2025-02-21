@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2023.04`](https://github.com/Raku/docker/blob/908f33d76c1437ddfdee8596049d8a9877c03d60/2023.04/bullseye/Dockerfile)
--	[`alpine`, `2023.04-alpine`](https://github.com/Raku/docker/blob/908f33d76c1437ddfdee8596049d8a9877c03d60/2023.04/alpine3.17/Dockerfile)
+-	[`latest`, `2024.12`, `bookworm`](https://github.com/Raku/docker/blob/5ee0f98efba56a1152775f861662c1774520aef9/2024.12/bookworm/Dockerfile)
+
+-	[`alpine`, `2024.12-alpine`](https://github.com/Raku/docker/blob/5ee0f98efba56a1152775f861662c1774520aef9/2024.12/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -87,6 +88,8 @@ The `rakudo-star` images come in many flavors, each designed for a specific use 
 ## `rakudo-star:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `rakudo-star:<version>-alpine`
 

@@ -24,10 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver11-bionic`](https://github.com/osrf/docker_images/blob/6900fe08e79c7b70471cb10f83324ec24a906bea/gazebo/11/ubuntu/bionic/gzserver11/Dockerfile)
--	[`libgazebo11-bionic`](https://github.com/osrf/docker_images/blob/6900fe08e79c7b70471cb10f83324ec24a906bea/gazebo/11/ubuntu/bionic/libgazebo11/Dockerfile)
--	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/6900fe08e79c7b70471cb10f83324ec24a906bea/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
--	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/6900fe08e79c7b70471cb10f83324ec24a906bea/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
+-	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/f7bb3258d4814deec1eca7e46cbb8d7f4b054431/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
+
+-	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/f7bb3258d4814deec1eca7e46cbb8d7f4b054431/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
 
 # Quick reference (cont.)
 
