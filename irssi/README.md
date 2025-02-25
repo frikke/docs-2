@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.4`, `1.4`, `1`, `latest`](https://github.com/jessfraz/irssi/blob/663b9b815d858c94ae6224183afed602d291587e/debian/Dockerfile)
--	[`1.4.4-alpine`, `1.4-alpine`, `1-alpine`, `alpine`](https://github.com/jessfraz/irssi/blob/6806daa0d17eae1cd10df10ff3a533d3655ac9f8/alpine/Dockerfile)
+-	[`1.4.5`, `1.4`, `1`, `latest`, `1.4.5-bookworm`, `1.4-bookworm`, `1-bookworm`, `bookworm`](https://github.com/jessfraz/irssi/blob/b8ea417aaa1a29a6003756627d748450a5bf6abe/debian/Dockerfile)
+
+-	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.21`, `1.4-alpine3.21`, `1-alpine3.21`, `alpine3.21`](https://github.com/jessfraz/irssi/blob/1581d0c09544a0bd8de42ba3d185956be6a9935c/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +34,7 @@ WARNING:
 	[https://github.com/jessfraz/irssi/issues](https://github.com/jessfraz/irssi/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/irssi/), [`arm32v5`](https://hub.docker.com/r/arm32v5/irssi/), [`arm32v6`](https://hub.docker.com/r/arm32v6/irssi/), [`arm32v7`](https://hub.docker.com/r/arm32v7/irssi/), [`arm64v8`](https://hub.docker.com/r/arm64v8/irssi/), [`i386`](https://hub.docker.com/r/i386/irssi/), [`mips64le`](https://hub.docker.com/r/mips64le/irssi/), [`ppc64le`](https://hub.docker.com/r/ppc64le/irssi/), [`s390x`](https://hub.docker.com/r/s390x/irssi/)
+	[`amd64`](https://hub.docker.com/r/amd64/irssi/), [`arm32v5`](https://hub.docker.com/r/arm32v5/irssi/), [`arm32v6`](https://hub.docker.com/r/arm32v6/irssi/), [`arm32v7`](https://hub.docker.com/r/arm32v7/irssi/), [`arm64v8`](https://hub.docker.com/r/arm64v8/irssi/), [`i386`](https://hub.docker.com/r/i386/irssi/), [`mips64le`](https://hub.docker.com/r/mips64le/irssi/), [`ppc64le`](https://hub.docker.com/r/ppc64le/irssi/), [`riscv64`](https://hub.docker.com/r/riscv64/irssi/), [`s390x`](https://hub.docker.com/r/s390x/irssi/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/irssi/` directory](https://github.com/docker-library/repo-info/blob/master/repos/irssi) ([history](https://github.com/docker-library/repo-info/commits/master/repos/irssi))  
@@ -92,6 +93,8 @@ The `irssi` images come in many flavors, each designed for a specific use case.
 ## `irssi:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `irssi:<version>-alpine`
 
