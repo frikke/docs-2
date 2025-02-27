@@ -17,19 +17,22 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Canonical](https://launchpad.net/cloud-images) and [Tianon (Debian Developer)](https://git.launchpad.net/cloud-images/+oci/ubuntu-base)
+	[Canonical](https://launchpad.net/cloud-images)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20230412`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-bionic-amd64-20230412-46786f36&id=46786f36bc92dd9662f9a1e7530b4859f6cd4625)
--	[`20.04`, `focal-20230412`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230412-26258b91&id=26258b9129f269190048fdf2b46d82de5ae5f79c)
--	[`22.04`, `jammy-20230425`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230425-997c5b6f&id=997c5b6fc12a87708c63485cb5599d85973ca211)
--	[`22.10`, `kinetic-20230412`, `kinetic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230412-acd9976c&id=acd9976cf1d024747ad42960daa92bc3065e3a38)
--	[`23.04`, `lunar-20230420`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230420-a3feaf47&id=a3feaf47f3c57e4aec70c8d07ecd8dde43e0be21)
--	[`23.10`, `mantic-20230511.1`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230511.1-82ff77c8&id=82ff77c875ff4cf8f6b008afec7747175459e253)
+-	[`20.04`, `focal-20241011`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20241011-2dc0aae1&id=2dc0aae17c912aa6ae81e4c4bbc7277692d67bae)
+
+-	[`22.04`, `jammy-20250126`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250126-b0d70ec8&id=b0d70ec8ea0e2d97d7311e85d6d42e054bb80350)
+
+-	[`24.04`, `noble-20250127`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250127-9fabb4ba&id=9fabb4bad5138435b01857e2fe9363e2dc5f6a79)
+
+-	[`24.10`, `oracular-20241120`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20241120-aea1b7d3&id=aea1b7d330330843a7f7783a788965bc4e89cf6a)
+
+-	[`25.04`, `plucky-20241213`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20241213-a232d27b&id=a232d27bc1e7b1173a1c8154366982d1e72b0d9b)
 
 # Quick reference (cont.)
 
@@ -37,7 +40,7 @@ WARNING:
 	[the cloud-images bug tracker](https://bugs.launchpad.net/cloud-images) (include the `docker` tag)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`i386`](https://hub.docker.com/r/i386/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
+	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`riscv64`](https://hub.docker.com/r/riscv64/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ubuntu/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ubuntu))  
@@ -58,7 +61,7 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 > [wikipedia.org/wiki/Ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/ubuntu/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/2ac3caaf21dfba9734f20518971983edc617c77c/ubuntu/logo.png)
 
 # What's in this image?
 
@@ -80,15 +83,18 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
 ENV LANG en_US.utf8
 ```
 
+## Unminimize
+
+Starting from [Ubuntu 24.10 "Oracular Oriole"](https://discourse.ubuntu.com/t/oracular-oriole-release-notes/44878#unminimize), the `unminimize` command will no longer be shipped by default on minimal images. It has now been moved to a dedicated package which can be installed via `apt-get install -y unminimize`.
+
 # How is the rootfs built?
 
 The tarballs published by Canonical, referenced by `dist-*` tags in https://git.launchpad.net/cloud-images/+oci/ubuntu-base Git repository, are built from scripts that live in [the livecd-rootfs project](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+ref/ubuntu/master), especially `live-build/auto/build`. The builds are run on Launchpad. For build history see `livefs` build pages of individual releases on Launchpad:
 
--	[Bionic](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/bionic/ubuntu-oci)
 -	[Focal](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/focal/ubuntu-oci)
 -	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
--	[Kinetic](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/kinetic/ubuntu-oci)
--	[Lunar](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/lunar/ubuntu-oci)
+-	[Noble](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/noble/ubuntu-oci)
+-	[Oracular](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/oracular/ubuntu-oci)
 
 # License
 
